@@ -22,7 +22,7 @@ class AboutPage(models.Model):
 
 class OpenAndCloseHour(models.Model):
     open_hour = models.TimeField()
-    open_hour = models.TimeField()
+    close_hour = models.TimeField()
     opan_close_day = models.CharField(max_length = 70)
     added_at = models.DateTimeField(auto_now_add=True)
 
