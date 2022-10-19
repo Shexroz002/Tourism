@@ -125,10 +125,10 @@ USE_TZ = True
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 CORS_ORIGIN_ALLOW_ALL = True
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfile')
 STATICFILES_DIRS = [
   # Tell Django where to look for React's static files (css, js)
-  os.path.join(BASE_DIR, "frontend/templates/build/static"),
+  os.path.join(BASE_DIR, "static"),
 ]
 MEDIA_ROOT = BASE_DIR / 'media' # 'data' is my media folder
 MEDIA_URL = '/media/'
